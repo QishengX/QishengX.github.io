@@ -2138,3 +2138,8 @@ footer .copy-right {
     padding: 0;
     margin: 0;
 }
+
+/* 自定义修改样式 */
+.nickname{
+    font-size: 3.5rem;
+}
