@@ -116,8 +116,8 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
-logo: /medias/logo.png
+favicon: https://s1.imagehub.cc/images/2020/12/16/favicon.png
+logo: https://s1.imagehub.cc/images/2020/12/16/logo.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -126,7 +126,7 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/QishengX
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -148,7 +148,7 @@ socialLink:
 toc:
   enable: true
   heading: h2, h3, h4
-  collapseDepth: 0 # 目录默认展开层级
+  collapseDepth: 1 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
 # 代码块相关
@@ -162,8 +162,8 @@ code:
 reward:
   enable: true
   title: 你的赏识是我前进的动力
-  wechat: /medias/reward/wechat.png
-  alipay: /medias/reward/alipay.jpg
+  wechat: https://s1.imagehub.cc/images/2020/12/16/wechat.png
+  alipay: https://s1.imagehub.cc/images/2020/12/16/alipay.jpg
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
@@ -189,11 +189,11 @@ mathjax:
 # 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 postInfo:
   date: true # 发布日期
-  update: false # 更新日期
-  wordCount: false # 文章字数统计
-  totalCount: false # 站点总文章字数
-  min2read: false # 文章阅读时长
-  readCount: false # 文章阅读次数
+  update: true # 更新日期
+  wordCount: true # 文章字数统计
+  totalCount: true # 站点总文章字数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
@@ -203,31 +203,31 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
-  career: Software Engineer
+  avatar: https://s1.imagehub.cc/images/2020/12/16/xqs.jpg
+  career: Student
   introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
-myProjects:
-  enable: true
-  data:
-    hexo-theme-matery:
-      icon: fas fa-file-alt
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
-      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    Fenix:
-        icon: fas fa-database
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
-        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
-    typora-vue-theme:
-        icon: fas fa-file-alt
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+# myProjects:
+#   enable: true
+#   data:
+#     hexo-theme-matery:
+#       icon: fas fa-file-alt
+#       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+#       url: http://github.com/blinkfox/hexo-theme-matery
+#       desc: This is a Hexo blog theme with 'Material Design' and responsive design.
+#     Fenix:
+#         icon: fas fa-database
+#         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+#         url: https://github.com/blinkfox/fenix
+#         desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
+#     typora-vue-theme:
+#         icon: fas fa-file-alt
+#         iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+#         url: https://github.com/blinkfox/typora-vue-theme
+#         desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -235,7 +235,7 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    Python:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 85%
     JavaScript:
@@ -249,7 +249,7 @@ mySkills:
       percent: 70%
     SQL:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
+      percent: 60%
     程序设计:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
       percent: 75%
@@ -260,9 +260,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    - https://s1.imagehub.cc/images/2020/12/16/1.jpg
+    - https://s1.imagehub.cc/images/2020/12/16/2.jpg
+    - https://s1.imagehub.cc/images/2020/12/16/3.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -463,30 +463,29 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-- /medias/featureimages/0.jpg
-- /medias/featureimages/1.jpg
-- /medias/featureimages/2.jpg
-- /medias/featureimages/3.jpg
-- /medias/featureimages/4.jpg
-- /medias/featureimages/5.jpg
-- /medias/featureimages/6.jpg
-- /medias/featureimages/7.jpg
-- /medias/featureimages/8.jpg
-- /medias/featureimages/9.jpg
-- /medias/featureimages/10.jpg
-- /medias/featureimages/11.jpg
-- /medias/featureimages/12.jpg
-- /medias/featureimages/13.jpg
-- /medias/featureimages/14.jpg
-- /medias/featureimages/15.jpg
-- /medias/featureimages/16.jpg
-- /medias/featureimages/17.jpg
-- /medias/featureimages/18.jpg
-- /medias/featureimages/19.jpg
-- /medias/featureimages/20.jpg
-- /medias/featureimages/21.jpg
-- /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
+- https://s1.imagehub.cc/images/2020/12/16/1.jpg
+- https://s1.imagehub.cc/images/2020/12/16/2.jpg
+- https://s1.imagehub.cc/images/2020/12/16/3.jpg
+- https://s1.imagehub.cc/images/2020/12/16/4.jpg
+- https://s1.imagehub.cc/images/2020/12/16/5.jpg
+- https://s1.imagehub.cc/images/2020/12/16/6.jpg
+- https://s1.imagehub.cc/images/2020/12/16/7.jpg
+- https://s1.imagehub.cc/images/2020/12/16/8.jpg
+- https://s1.imagehub.cc/images/2020/12/16/9.jpg
+- https://s1.imagehub.cc/images/2020/12/16/10.jpg
+- https://s1.imagehub.cc/images/2020/12/16/11.jpg
+- https://s1.imagehub.cc/images/2020/12/16/12.jpg
+- https://s1.imagehub.cc/images/2020/12/16/13.jpg
+- https://s1.imagehub.cc/images/2020/12/16/14.jpg
+- https://s1.imagehub.cc/images/2020/12/16/15.jpg
+- https://s1.imagehub.cc/images/2020/12/16/16.jpg
+- https://s1.imagehub.cc/images/2020/12/16/17.jpg
+- https://s1.imagehub.cc/images/2020/12/16/18.jpg
+- https://s1.imagehub.cc/images/2020/12/16/19.jpg
+- https://s1.imagehub.cc/images/2020/12/16/20.jpg
+- https://s1.imagehub.cc/images/2020/12/16/21.jpg
+- https://s1.imagehub.cc/images/2020/12/16/22.jpg
+- https://s1.imagehub.cc/images/2020/12/16/23.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
