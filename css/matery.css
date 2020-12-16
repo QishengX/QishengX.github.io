@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #3b4a8c 0%, #7b2323 100%);
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
 }
 
 .text-color {
@@ -2137,9 +2137,4 @@ footer .copy-right {
     height: 50px;
     padding: 0;
     margin: 0;
-}
-
-/* 自定义修改样式 */
-.nickname{
-    font-size: 3.5rem;
 }
