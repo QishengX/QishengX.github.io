@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="前端概述, github, Web, HTML,CSS,JavaScript">
+    <meta name="keywords" content="Markdown使用, github, Web, HTML,CSS,JavaScript">
     <meta name="description" content="学习、记录、分享">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>前端概述 | 徐齐胜的博客</title>
+    <title>Markdown使用 | 徐齐胜的博客</title>
     <link rel="icon" type="image/png" href="https://s1.imagehub.cc/images/2020/12/16/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,22 +29,164 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="徐齐胜的博客" type="application/atom+xml">
+<style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1000); 
+        },1000);//强制显示loading page 1s  
+    };
+    loaded();
+})()
+ </script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="徐齐胜的博客" type="application/atom+xml">
 </head>
 
 
 
 
-<body>
+
+ <div id="loading-container">
+     <p class="loading-text">精彩马上就来 . . . </p> 
+     <div class="loading-image">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div> 
+         <div></div>
+     </div>
+ </div><body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="https://s1.imagehub.cc/images/2020/12/16/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">徐齐胜的博客</span>
+                    <div>
+                        
+                        <img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/logo.png" class="logo-img" alt="LOGO">
+                        
+                        <span class="logo-span">徐齐胜的博客</span>
+                    </div>
                 </a>
             </div>
             
@@ -141,7 +283,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://s1.imagehub.cc/images/2020/12/16/logo.png" class="logo-img circle responsive-img">
+        <img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">徐齐胜的博客</div>
         <div class="logo-desc">
@@ -311,12 +453,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.imagehub.cc/images/2020/12/16/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.imagehub.cc/images/2020/12/16/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">前端概述</h1>
+                    <h1 class="description center-align post-title">Markdown使用</h1>
                 </div>
             </div>
         </div>
@@ -432,8 +574,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Web/">
-                                <span class="chip bg-color">Web</span>
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91/">
+                                <span class="chip bg-color">文本编辑</span>
                             </a>
                         
                     </div>
@@ -444,8 +590,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Web/" class="post-category">
-                                Web
+                            <a href="/categories/Markdown/" class="post-category">
+                                Markdown
                             </a>
                         
                     </div>
@@ -457,28 +603,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-15
+                    2020-12-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-16
+                    2020-12-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    443
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -498,9 +644,62 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="网站逻辑介绍"><a href="#网站逻辑介绍" class="headerlink" title="网站逻辑介绍"></a>网站逻辑介绍</h2><p>前端分为客户端与服务器。其中，客户端是通过浏览器解析前端工程师所写的网页源码来实现（我们日常的上网所浏览的网页都是基于这个逻辑的），服务器主要处理前端的请求并返回结果响应。<br>前端页面所涉及的核心技术为HTML（超文本标记语言）、CSS（层叠样式表）和JavaScript。其中，HTML是网页骨架，CSS控制网页的显示样式，JavaScript控制网页的行为（这三种技术一般称为“结构—样式—行为”）。</p>
-<h2 id="前端学习路线"><a href="#前端学习路线" class="headerlink" title="前端学习路线"></a>前端学习路线</h2><p>学习Web开发一般可以按照先学HTML，然后学习CSS，最后再学Javascript这样的顺序进行。当然，需要注意的是，初学阶段，在学习HTML时，主要以对各个标签熟悉为主。对于暂时理解不了的知识不要过于纠结，随着学习的深入这些疑问才能慢慢理解，比如HTML表单，在没有学习JavaScript以及后端的知识时，很难完全理解表单的运行逻辑；在学习CSS时，同样是以熟悉各个CSS熟悉为主，不必要求一下子要记住所有的属性，但务必要将各个属性的原理理解清楚，比如外边距折叠、高度塌陷等问题是怎么产生的；到了学习JavaScript时，不仅要学习它的理论知识，还要勤于动手，在练习实践中学习、理解知识。  </p>
-<p>最后，在学习这三部分内容时，一定要耐下心来，把每个知识点都过一遍，多多练习。这三部分知识是整个网页前端的基础和核心。</p>
+                <h1 id="Markdown使用"><a href="#Markdown使用" class="headerlink" title="Markdown使用"></a>Markdown使用</h1><h2 id="Markdown标题"><a href="#Markdown标题" class="headerlink" title="Markdown标题"></a>Markdown标题</h2><ul>
+<li>使用’ = ‘和’ - ‘标记一级标题和二级标题<h1 id="我展示的是一级标题（只要下方有一个等号即可）"><a href="#我展示的是一级标题（只要下方有一个等号即可）" class="headerlink" title="我展示的是一级标题（只要下方有一个等号即可）"></a>我展示的是一级标题（只要下方有一个等号即可）</h1></li>
+</ul>
+<h2 id="我展示的是二级标题"><a href="#我展示的是二级标题" class="headerlink" title="我展示的是二级标题"></a>我展示的是二级标题</h2><ul>
+<li>使用’ # ‘号的个数来标记标题的级别，有1~6这六个级别的标题，#个数越多，代表标题级别越低。</li>
+</ul>
+<h2 id="Markdown段落"><a href="#Markdown段落" class="headerlink" title="Markdown段落"></a>Markdown段落</h2><p>Markdown段落没有特殊的格式，直接编写文字就好。<br><strong>段落换行：</strong>使用两个以上的空格加回车，然后在该行输入文字，即可实现段落的换行。<br><font color=red>注意，这种做法是实现换行，两行之间并没有空一行；</font><br><strong>两行之间空一行：</strong>输入文字时在两行之间空一行。</p>
+<h2 id="Markdown字体"><a href="#Markdown字体" class="headerlink" title="Markdown字体"></a>Markdown字体</h2><ul>
+<li>斜体<ol>
+<li>使用两个星号*将文字包裹起来，可实现斜体；</li>
+<li>使用英文输入法的两个下划线_也可实现斜体；</li>
+</ol>
+</li>
+<li>文本加粗<ol>
+<li>左右均使用两个星号*包裹文字，可实现文字加粗效果；</li>
+<li>左右均使用英文输入法的两个下划线_也可实现文本的加粗效果。</li>
+</ol>
+</li>
+<li>粗斜体文本<ol>
+<li>左右各使用三个星号*将文字包裹，可实现粗斜体文本；</li>
+<li>左右各使用英文输入法的三个下划线_，也可实现粗斜体文本。<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/149f065fc241fe142.png" alt="字体效果"></li>
+</ol>
+</li>
+</ul>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/2.png" alt="分割线效果"></p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>下划线可以通过 HTML 的 u 标签来实现：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/3.png" alt="下划线效果"></p>
+<h2 id="Markdown列表"><a href="#Markdown列表" class="headerlink" title="Markdown列表"></a>Markdown列表</h2><p>Markdown 支持有序列表和无序列表。  </p>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表使用星号、加号或是减号作为列表标记，这些标记后面要添加一个空格，然后再填写内容：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/4.png" alt="无序列表效果"></p>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>有序列表使用数字并加上 . 号来表示，如：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/5a94e9ca455f38b74.png" alt="有序列表效果"></p>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><p>列表嵌套只需在子列表中的选项前面添加四个空格即可：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/6.png" alt="列表嵌套效果"></p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>使用HTML的del标签实现。<br><del>删除文字</del></p>
+<h2 id="Markdown区块"><a href="#Markdown区块" class="headerlink" title="Markdown区块"></a>Markdown区块</h2><p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号。<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/7813e7c0a782e3937.png" alt="区块效果"><br>另外区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推。<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/8.png" alt="区块嵌套效果"></p>
+<h2 id="区块中使用列表"><a href="#区块中使用列表" class="headerlink" title="区块中使用列表"></a>区块中使用列表</h2><p>具体用法见下面实例：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/9b3a394c0fe1c1c14.png" alt="区块中使用列表"></p>
+<h2 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h2><p>如果要在列表项目内放进区块，那么就需要在 &gt; 前添加四个空格的缩进。区块中使用列表实例如下：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/10.png" alt="列表中使用区块"></p>
+<h2 id="Markdown代码"><a href="#Markdown代码" class="headerlink" title="Markdown代码"></a>Markdown代码</h2><ul>
+<li>如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`）。</li>
+<li>代码区块：代码区块使用 4 个空格或者一个制表符（Tab 键）来包裹代码；也可以使用三对反引号来包裹代码块。</li>
+</ul>
+<h2 id="Markdown链接"><a href="#Markdown链接" class="headerlink" title="Markdown链接"></a>Markdown链接</h2><p>链接的使用方法为：<code>[链接名称](链接地址)</code>或<code>&lt;链接地址&gt;</code>，两个实例分别为：<br><a href="https://qishengx.github.io/">徐齐胜的博客</a>、<a href="https://qishengx.github.io/">https://qishengx.github.io/</a><br><strong>高级链接：</strong>通过变量来设置链接，变量赋值在文档末尾进行。一个实例为：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/11.png" alt="高级链接案例"></p>
+<h2 id="Markdown图片"><a href="#Markdown图片" class="headerlink" title="Markdown图片"></a>Markdown图片</h2><p>Markdown语法格式为：  </p>
+<ul>
+<li>开头一个感叹号 !;  </li>
+<li>接着一个方括号，里面放上图片的替代文字;  </li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/12.png" alt="Markdown图片语法"><br>当然，你也可以像网址那样对图片网址使用变量:<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/13d6306a3946c9193b.png" alt="图片的高级用法"><br><font color=red>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <code>&lt;img&gt;</code> 标签。</font></li>
+</ul>
+<h2 id="Markdown表格"><a href="#Markdown表格" class="headerlink" title="Markdown表格"></a>Markdown表格</h2><blockquote>
+<p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。语法格式如下：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/14.png" alt="Markdown表格语法规则"></p>
+<blockquote>
+<p>表格对齐方式<br>我们可以设置表格的对齐方式：<br>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。<br>实例如下：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/15.png" alt="表格实例"></p>
+</blockquote>
+</blockquote>
+<h2 id="Markdown高级技巧"><a href="#Markdown高级技巧" class="headerlink" title="Markdown高级技巧"></a>Markdown高级技巧</h2><ul>
+<li>支持HTML元素：不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</li>
+<li>转义：Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠 \ 转义特殊字符。</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>- [1] <a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">菜鸟教程</a></p>
 
                 
             </div>
@@ -527,7 +726,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://qishengx.github.io/2020/12/15/HTML01/">https://qishengx.github.io/2020/12/15/HTML01/</a>
+                    <a href="https://qishengx.github.io/2020/12/28cddff3.html">https://qishengx.github.io/2020/12/28cddff3.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -565,8 +764,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Web/">
-                                    <span class="chip bg-color">Web</span>
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91/">
+                                    <span class="chip bg-color">文本编辑</span>
                                 </a>
                             
                         </div>
@@ -696,10 +899,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="https://s1.imagehub.cc/images/2020/12/16/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="https://s1.imagehub.cc/images/2020/12/16/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -737,7 +940,7 @@
         repo: 'QishengX.github.io',
         owner: 'QishengX',
         admin: "QishengX",
-        id: '2020-12-15T21-40-00',
+        id: '2020-12-16T21-40-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -763,15 +966,16 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/12/16/Markdown/">
+                <a href="/2020/12/28cddff3.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.imagehub.cc/images/2020/12/16/18.jpg" class="responsive-img" alt="Markdown使用">
+                        <img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/18.jpg" class="responsive-img" alt="Markdown使用">
                         
                         <span class="card-title">Markdown使用</span>
                     </div>
@@ -783,9 +987,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -798,6 +1002,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -817,14 +1022,14 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/15/HTML01/">
+                <a href="/2020/12/dbc0e3b9.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.imagehub.cc/images/2020/12/16/15.jpg" class="responsive-img" alt="前端概述">
+                        <img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/16/15.jpg" class="responsive-img" alt="前端概述">
                         
                         <span class="card-title">前端概述</span>
                     </div>
@@ -851,7 +1056,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1279,6 +1483,11 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
