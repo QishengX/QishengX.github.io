@@ -278,7 +278,7 @@ menu:
 
 执行 `hexo clean && hexo g` 重新生成博客文件，然后就可以在文章中对应位置看到你用`emoji`语法写的表情了。
 
-### 代码高亮
+### 代码高亮（我还未修改这一部分）
 
 从 Hexo5.0 版本开始自带了 `prismjs` 代码语法高亮的支持，本主题对此进行了改造支持。
 
@@ -303,7 +303,7 @@ prismjs:
 
 主题中默认的 `prismjs` 主题是 `Tomorrow Night`，如果你想定制自己的主题，可以前往 [prismjs 下载页面](https://prismjs.com/download.html) 定制下载自己喜欢的主题 `css` 文件，然后将此 css 主题文件取名为 `prism.css`，替换掉 `hexo-theme-matery` 主题文件夹中的 `source/libs/prism/prism.css` 文件即可。
 
-### 搜索
+### 搜索（已做）
 
 本主题中还使用到了 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) 的 Hexo 插件来做内容搜索，安装命令如下：
 
@@ -319,7 +319,7 @@ search:
   field: post
 ```
 
-### 中文链接转拼音（建议安装）
+### 中文链接转拼音（建议安装）（未做、没安装上）
 
 如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 `SEO`，且 `gitment` 评论对中文链接也不支持。我们可以用 [hexo-permalink-pinyin](https://github.com/viko16/hexo-permalink-pinyin) Hexo 插件使在生成文章时生成中文拼音的永久链接。
 
@@ -339,7 +339,7 @@ permalink_pinyin:
 
 > **注**：除了此插件外，[hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) 插件也可以生成非中文的链接。
 
-### 文章字数统计插件（建议安装）
+### 文章字数统计插件（建议安装）（已做）
 
 如果你想要在文章中显示文章字数、阅读时长信息，可以安装 [hexo-wordcount](https://github.com/willin/hexo-wordcount)插件。
 
@@ -380,7 +380,7 @@ githubEmojis:
   customEmojis:
 ```
 
-### 添加 RSS 订阅支持（可选的）
+### 添加 RSS 订阅支持（可选的）（已做）
 
 本主题中还使用到了 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 的 Hexo 插件来做 `RSS`，安装命令如下：
 

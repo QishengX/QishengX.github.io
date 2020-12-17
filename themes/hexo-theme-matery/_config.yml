@@ -283,13 +283,13 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
-  owner:
-  repo:
+  enable: true
+  owner: QishengX
+  repo: QishengX.github.io
   oauth:
-    clientId:
-    clientSecret:
-  admin:
+    clientId: 7ceaf9aad2197bebef01
+    clientSecret: 769c0c9370c57fd74d8610dc6ea5538ee2c45dd7
+  admin: QishengX
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -318,14 +318,14 @@ livere:
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: false
-  appId:
-  appKey:
+  appId: LvOBe9kyuj5JtfJjDftE4VXJ-MdYXbMMI
+  appKey: 6uEa5nQ7W2NB6W2iINv7xL4Y
   notify: false
   verify: false
   visitor: true
-  avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  avatar: 'monsterid' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
-  placeholder: 'just go go' # Comment Box placeholder
+  placeholder: '留下你的足迹' # Comment Box placeholder
   background: /medias/comment_bg.png
 
 # The configuration of the MiniValine comment module is not activated by default.
