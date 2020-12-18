@@ -81,6 +81,13 @@
 
   
   <url>
+    <loc>https://qishengx.github.io/tags/CSS/</loc>
+    <lastmod>2020-12-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://qishengx.github.io/tags/Web/</loc>
     <lastmod>2020-12-18</lastmod>
     <changefreq>daily</changefreq>
@@ -101,14 +108,14 @@
     <priority>0.6</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://qishengx.github.io/tags/CSS/</loc>
+    <loc>https://qishengx.github.io/categories/CSS/</loc>
     <lastmod>2020-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
-  
-
   
   <url>
     <loc>https://qishengx.github.io/categories/Web/</loc>
@@ -119,13 +126,6 @@
   
   <url>
     <loc>https://qishengx.github.io/categories/Markdown/</loc>
-    <lastmod>2020-12-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://qishengx.github.io/categories/CSS/</loc>
     <lastmod>2020-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
