@@ -244,6 +244,11 @@ mark {
     background-image: linear-gradient(to right, #624d73 0%, #a23232 100%);
 }
 
+.bg-cover:after {
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
+}
+
 .text-color {
     color: #a23232 !important;
 }
