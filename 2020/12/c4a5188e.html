@@ -715,12 +715,11 @@
 <ul>
 <li><strong>animation-fill-mode：</strong>动画的填充模式。  <blockquote>
 <blockquote>
-<p>可选值有：  </p>
+<p>可选值有：<br>1、 <strong>none</strong> 默认值，动画执行完毕元素会回到原来的位置，但需要注意的是，动画延时等待时，元素不会处于关键帧开始状态，而是原来状态；<br>2、 <strong>forwards</strong> 动画执行完毕后元素会停在动画结束的位置；<br>3、 <strong>backwards</strong> 动画执行完毕时，停留在开始位置。但需要注意的是，动画延时等待时，元素就会处于关键帧开始状态。<br>4、 <strong>both</strong> 结合了forwards和backwards，即延时等待时，元素就处于关键帧开始状态，动画结束时，元素停留在动画最后一帧。</p>
 </blockquote>
 </blockquote>
 </li>
 </ul>
-<p><strong>none</strong> 默认值，动画执行完毕元素会回到原来的位置，但需要注意的是，动画延时等待时，元素不会处于关键帧开始状态，而是原来状态；<br><strong>forwards</strong> 动画执行完毕后元素会停在动画结束的位置；<br><strong>backwards</strong> 动画执行完毕时，停留在开始位置。但需要注意的是，动画延时等待时，元素就会处于关键帧开始状态。<br><strong>both</strong> 结合了forwards和backwards，即延时等待时，元素就处于关键帧开始状态，动画结束时，元素停留在动画最后一帧。</p>
 </blockquote>
 <blockquote>
 <p><strong>动画的简写属性</strong> <code>animation</code>，用法和过渡效果一致，详细属性无顺序要求，注意两个时间的顺序即可。</p>
