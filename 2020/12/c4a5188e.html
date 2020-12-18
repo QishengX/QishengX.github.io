@@ -672,18 +672,18 @@
 <li><p>设置动画关键帧；</p>
 </li>
 <li><p>在需要添加动画的元素中设置动画。<br>&emsp;&emsp;<strong>关键帧</strong>设置语法：<code>使用keyframes</code>关键字设置,<code>name</code>是动画名字。</p>
-<pre><code>@keyframes name &#123;
-     /* from表示动画的开始位置（状态） 也可以使用 0% */
-     from&#123;
-         margin-left: 0;
-         background-color: orange;
-     &#125; 
-     /* to动画的结束位置（状态） 也可以使用100%*/
-     to&#123;
-         background-color: red;
-         margin-left: 700px;
-     &#125;
+<p> @keyframes name {</p>
+<pre><code> /* from表示动画的开始位置（状态） 也可以使用 0% */
+ from&#123;
+     margin-left: 0;
+     background-color: orange;
+ &#125; 
+ /* to动画的结束位置（状态） 也可以使用100%*/
+ to&#123;
+     background-color: red;
+     margin-left: 700px;
  &#125;</code></pre>
+<p> }</p>
 </li>
 </ol>
 <blockquote>
@@ -698,17 +698,18 @@
 <li><strong>animation-delay：</strong>设置动画执行之前的延迟时间。</li>
 <li><strong>animation-timing-function：</strong>设置动画执行的方式（以上四个动画属性和过渡效果的属性用法一致）。</li>
 <li><strong>animation-iteration-count：</strong>设置动画执行的次数，值可以是阿拉伯数字或 <code>infinite</code> 无限执行。</li>
-<li><strong>animatio-direction：</strong>指定动画执行的方向。<br>可选值有：<blockquote>
+<li><strong>animatio-direction：</strong>指定动画执行的方向。  <blockquote>
 <blockquote>
+<p>可选值有：</p>
 </blockquote>
 </blockquote>
 </li>
 </ul>
 </blockquote>
 <ol>
-<li><strong>normal</strong> 默认值，从from向to方向执行，每次都是这样；</li>
-<li><strong>reverse</strong> 从to向from方向执行；</li>
-<li><strong>alternate</strong> 从from向to方向交替执行；</li>
+<li><strong>normal</strong> 默认值，从from向to方向执行，每次都是这样；  </li>
+<li><strong>reverse</strong> 从to向from方向执行；  </li>
+<li><strong>alternate</strong> 从from向to方向交替执行；  </li>
 <li><strong>alternate-reverse</strong> 从to向from方向交替执行。  </li>
 </ol>
 <blockquote>
@@ -718,8 +719,9 @@
 </ul>
 </blockquote>
 <ul>
-<li><strong>animation-fill-mode：</strong>动画的填充模式。<br>可选值有：  <blockquote>
+<li><strong>animation-fill-mode：</strong>动画的填充模式。  <blockquote>
 <blockquote>
+<p>可选值有：  </p>
 </blockquote>
 </blockquote>
 </li>
