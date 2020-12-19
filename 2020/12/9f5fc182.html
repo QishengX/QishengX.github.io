@@ -658,8 +658,8 @@
 <blockquote>
 <p><strong>应用：</strong>使用平移效果可以实现在元素尺寸由内容撑开时元素的水平、垂直居中效果。<br><strong>语法</strong>：</p>
 <blockquote>
-</blockquote>
 <p>沿着 x 轴方向平移 <code>transform:translateX(平移量)</code>；<br>沿着 y 轴方向平移 <code>transform:translateY(平移量)</code>；<br>沿着 z 轴方向平移 <code>transform:translateZ(平移量)</code>；</p>
+</blockquote>
 </blockquote>
 <blockquote>
 <p><strong>实例1：</strong>元素沿着 x 轴从父元素的左侧平移到右侧。<br>效果为：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/19/translateX.gif" alt="平移实例效果图"><br>参考代码为：  </p>
@@ -697,14 +697,14 @@
 <h2 id="旋转rotate"><a href="#旋转rotate" class="headerlink" title="旋转rotate"></a>旋转rotate</h2><blockquote>
 <p>&emsp;&emsp;使用旋转 <code>rotate</code> 可以改变元素的位置，可以调整元素的显示角度，以实现 3D 效果。<br><strong>可选值有：</strong></p>
 <blockquote>
-</blockquote>
 <p><code>rotateX()</code>：元素沿着 x 轴方向旋转；<br><code>rotateY()</code>：元素沿着 y 轴方向旋转；<br><code>rotateZ()</code>：元素沿着 z 轴方向旋转；<br>其中，旋转的单位可以是度 deg 或圈数 (turn)。当元素设置旋转效果时，是否显示元素的背面，可以使用 <code>backface-visibility</code> 来设置，可选值为 <code>hidden</code> 和 <code>visible</code>。<font color=orange>需要注意的是：每个元素自身都有一个坐标轴，一开始都处于默认状态，旋转会改变坐标轴x、y、z轴的方向。因此在与平移结合使用时需要特别注意。</font></p>
+</blockquote>
 </blockquote>
 <blockquote>
 <p><strong>应用：</strong>使用旋转效果可以实现模拟钟表等应用。<br><strong>语法</strong>：</p>
 <blockquote>
-</blockquote>
 <p>沿着 x 轴方向旋转 <code>transform:rotateX(旋转角度)</code>；<br>沿着 y 轴方向旋转 <code>transform:rotateY(旋转角度)</code>；<br>沿着 z 轴方向旋转 <code>transform:rotateZ(旋转角度)</code>；</p>
+</blockquote>
 </blockquote>
 <blockquote>
 <p><strong>实例2：</strong>元素沿着 z 轴旋转45度。<br>效果为：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/19/rotate.gif" alt="旋转效果图"><br>参考代码为：  </p>
@@ -745,14 +745,14 @@
 <h2 id="缩放scale"><a href="#缩放scale" class="headerlink" title="缩放scale"></a>缩放scale</h2><blockquote>
 <p>&emsp;&emsp;使用缩放 <code>scale</code> 可以改变元素的形状尺寸。<br><strong>可选值有：</strong></p>
 <blockquote>
-</blockquote>
 <p><code>scaleX()</code>：元素沿着 x 轴方向缩放；<br><code>scaleY()</code>：元素沿着 y 轴方向缩放；<br><code>scale()</code>：元素沿着 x,y 轴双方向缩放；<br><code>scaleZ()</code>：元素沿着 z 轴方向缩放，但这个值用的比较少，如果用了的话要配合 3D 效果才能显示出效果；<br>其中，旋转的单位可以是度 deg 或圈数 (turn)。当元素设置旋转效果时，是否显示元素的背面，可以使用 <code>backface-visibility</code> 来设置，可选值为 <code>hidden</code> 和 <code>visible</code>。<font color=orange>需要注意的是：每个元素自身都有一个坐标轴，一开始都处于默认状态，旋转会改变坐标轴x、y、z轴的方向。因此在与平移结合使用时需要特别注意。</font></p>
+</blockquote>
 </blockquote>
 <blockquote>
 <p><strong>应用：</strong>使用旋转效果可以实现模拟钟表等应用。<br><strong>语法</strong>：</p>
 <blockquote>
-</blockquote>
 <p>沿着 x 轴方向缩放 <code>transform:scaleX(缩放比例)</code>；<br>沿着 y 轴方向缩放 <code>transform:scaleY(缩放比例)</code>；<br>沿着 x,y 轴双方向缩放 <code>transform:scale(缩放比例)</code>；</p>
+</blockquote>
 </blockquote>
 <blockquote>
 <p><strong>实例3：</strong>元素沿着 x 轴放大2倍。<br>效果为：<br><img src="/images/loading.gif" data-original="https://s1.imagehub.cc/images/2020/12/19/scaleX.gif" alt="缩放效果图"><br>参考代码为：  </p>
@@ -792,8 +792,8 @@
 <h2 id="transform参考原点"><a href="#transform参考原点" class="headerlink" title="transform参考原点"></a>transform参考原点</h2><blockquote>
 <p>&emsp;&emsp;变形效果的原点使用 <code>transform-origin</code> 来设置。默认情况下，变形效果的原点是元素的中心，也就是值为 <code>center</code>。<br><strong>可选值为：</strong></p>
 <blockquote>
-</blockquote>
 <p>center 默认值，变形效果参考原点为元素的中心；<br>使用方位词 <code>left</code>、<code>right</code>、<code>top</code>、<code>bottom</code> 及其组合，如果是单一方位词，则第二个值默认是center；<br>使用像素值指定；</p>
+</blockquote>
 </blockquote>
 <blockquote>
 <p><strong>语法：</strong> <code>transform-origin: value1 value2</code>。</p>
