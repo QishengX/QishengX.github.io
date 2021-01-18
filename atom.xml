@@ -6,7 +6,7 @@
   <link href="https://qishengx.github.io/atom.xml" rel="self"/>
   
   <link href="https://qishengx.github.io/"/>
-  <updated>2021-01-06T10:40:51.323Z</updated>
+  <updated>2021-01-18T12:10:52.353Z</updated>
   <id>https://qishengx.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows系统下mongoDB安装教程</title>
+    <link href="https://qishengx.github.io/2021/01/8e30dd64.html"/>
+    <id>https://qishengx.github.io/2021/01/8e30dd64.html</id>
+    <published>2021-01-18T10:40:00.000Z</published>
+    <updated>2021-01-18T12:10:52.353Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Windows系统下mongoDB安装教程&quot;&gt;&lt;a href=&quot;#Windows系统下mongoDB安装教程&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="MongoDB" scheme="https://qishengx.github.io/categories/MongoDB/"/>
+    
+    
+    <category term="mongoDB" scheme="https://qishengx.github.io/tags/mongoDB/"/>
+    
+    <category term="数据库" scheme="https://qishengx.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="软件安装教程" scheme="https://qishengx.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>基于Python+selenium实现自动填写表单</title>
